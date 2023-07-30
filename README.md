@@ -1,2 +1,3 @@
-# Convert Pdf to Word - Word to Pdf
- 
+=> install packages
+pip install docx2pdf
+pip install pdf2docx
