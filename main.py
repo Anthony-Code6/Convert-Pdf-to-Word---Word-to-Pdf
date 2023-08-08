@@ -29,7 +29,7 @@ def Buscar_Archivo_Pdf():
     archivo = filedialog.askopenfilename(
         title='Selecciona Archivos Pdf', filetypes=[('Archivos Pdf', '*.pdf')])
     cv = Converter(archivo)
-    cv.convert(archivo+'.docx')
+    cv.convert(archivo.split(".")[0]+'.docx')
     cv.close()
     showinfo(title='Mensaje',
              message='El Archivo se Convirtio a Word Correctamente')
